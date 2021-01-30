@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300&display=swap");
+.shape__container {
+  position: relative;
+  height: 550px;
+  width: 400px;
+}
+
+.shape {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #4787c9;
+  width: 400px;
+  height: 550px;
+  border-radius: 30px;
+  transition: 0.25s ease-in-out;
+  transform: skewX(-5deg) skewY(-5deg); /*Shorthand: skew(-5deg, -5deg);*/
+  box-shadow: 0px 5px 14px rgba(9, 33, 58, 0.1);
+}
+
+.customer__picture {
+  height: 50%;
+}
+
+.customer__picture img {
+  height: 100%;
+  transform: skewX(5deg) skewY(5deg) scale(1.15); /*Shorthand: skew(5deg, 5deg) scale(1.15);*/
+}
+
+.text {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  color: #f4f4f4;
+  padding: 40px 30px;
+  transform: skewX(5deg) skewY(5deg); /*Shorthand: skew(5deg, 5deg);*/
+}
+
+.text .logo {
+  margin-bottom: 10px;
+  max-height: 25px;
+}
+
+.shape__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f0f7ff;
+  width: 400px;
+  height: 550px;
+  border-radius: 30px;
+  transform: skewX(-5deg) skewY(-5deg) rotate(-20deg); /*Shorthand: skew(-5deg, -5deg) rotate(-20deg);*/
+  z-index: -10;
+}

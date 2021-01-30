@@ -1,0 +1,1 @@
+<?php $conn = mysqli_connect('localhost', 'root', '', 'kkn_unc');
